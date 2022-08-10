@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Admin | Salesburys</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="Style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	  </head>
+
+	<body data-new-gr-c-s-check-loaded="14.986.0" data-gr-ext-installed="">
+		<!-- Sidebar -->
+		<div class="sidenav">
+			<h3>Salesburys</h3>
+			<a href="index.html">Shop</a>
+			<a href="Admin.html">Admin</a>
+		  </div>
+		  <!-- /#sidebar-wrapper -->
+	
+	<div class="main">
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">Admin Page</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+		  </nav>
+	  
+		<main role="main">
+          <br />
+            <a href="AddProduct.html"><button type="button">Add New Product</button></a>
+			<br /><br/>
+            <form id="getdatabyid-form">
+                <h2>Delete existing product</h2>
+                <label for="id-text">Enter Product's ID:</label>
+                <input id="id-text" type="text" /><br/>
+                <input id="ajaxdelete-button" type="button" value="Delete Post" />
+                <div id="deleteresults"> </div>
+            </form>
+            <br /><br/>
+            <form id="readdata-form">
+                <h2>Search for an item</h2>
+                <label for="getid-text">Search Product by ID:</label>
+                <input id="getid-product" type="text" /><br/>
+                <input id="ajaxgetbyid-button" type="button" value="Get Post" />
+                <input id="ajaxgetallproducts-button" type="button" value="Remove Filter" />
+            </form>
+
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Image</th>
+              </tr>
+            </thead>
+            <tbody id="displaytableproducts">
+              
+            </tbody>
+          </table>
+
+			<footer class="container">
+				<p>© Salesburys 2021</p>
+			</footer>
+
+		  </div> <!-- /container -->
+		
+		<script src="Scripts/jquery-3.5.1.min.js"></script>
+		<script src="Scripts/Productswebsrv.js"></script>
+		</main>
+
+
+		</div>
+	</div> 
+</body>
+</html>

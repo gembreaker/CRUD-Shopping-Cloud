@@ -1,0 +1,76 @@
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: rgb(255, 255, 255); /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #474747;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #000000;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .jumbotron-fluid {
+    background: url('shopping.jpg') no-repeat #000;
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 200px) {
+    .jumbotron-fluid {
+      min-height: 300px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .jumbotron-fluid {
+      min-height: 400px;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    .jumbotron-fluid {
+      min-height: 700px;
+      background-image: url('shopping.jpg');
+      background-position: center bottom;
+    }
+  }
+  
+  .hide-mobile{
+    display: block;
+  }
+
+  .jumbotitle{
+    padding-top: 200px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.185);
+  }
